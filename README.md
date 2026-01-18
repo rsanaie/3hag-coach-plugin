@@ -36,7 +36,7 @@ The 3HAG methodology creates a "3 Year Highly Achievable Goal" — close enough 
 /plugin marketplace add rsanaie/3hag-coach-plugin
 
 # Install the plugin
-/plugin install 3hag-coach
+/plugin install 3hag
 ```
 
 ### Manual Installation

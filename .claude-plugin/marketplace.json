@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "3hag-coach",
+      "name": "3hag",
       "source": "./",
       "description": "Coach users through Shannon Susko's 3HAG strategic planning framework",
       "version": "1.0.0"
