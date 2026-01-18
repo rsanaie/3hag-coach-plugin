@@ -4,26 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a **Claude Code plugin** containing a skill that transforms Claude into a 3HAG strategic planning coach. It implements Shannon Susko's "3HAG WAY" framework — a 12-step strategic execution system for creating 3-year business plans.
+This is a **Claude Code skill** that transforms Claude into a 3HAG strategic planning coach. It implements Shannon Susko's "3HAG WAY" framework — a 12-step strategic execution system for creating 3-year business plans.
 
 ## Structure
 
 ```
-├── .claude-plugin/
-│   ├── plugin.json             # Plugin metadata (name, version, author)
-│   └── marketplace.json        # Marketplace catalog for distribution
-├── skills/
-│   └── 3hag-coach/
-│       ├── SKILL.md            # Skill definition (frontmatter + coaching instructions)
-│       └── references/
-│           ├── methodology.md  # Complete 12-step 3HAG process
-│           └── tools.md        # Templates for all strategic tools
+├── SKILL.md                    # Skill definition (frontmatter + coaching instructions)
+└── references/
+    ├── methodology.md          # Complete 12-step 3HAG process
+    └── tools.md                # Templates for all strategic tools
 ```
 
 ## How It Works
 
-- `plugin.json` defines the plugin metadata for installation via `/plugin install`
-- `marketplace.json` allows users to add this repo as a plugin source
+- Users clone/symlink this repo to `~/.claude/skills/3hag-coach`
 - `SKILL.md` frontmatter (`name:`, `description:`) defines when the skill activates
 - The skill triggers on strategic planning keywords: 3HAG, Core Customer, swimlanes, Activity Fit Map, Market Map, One Phrase Strategy
 
@@ -43,7 +37,7 @@ When coaching, the skill creates markdown documents in the user's repo at `docs/
 - `3hag.md` — Master document
 - `core-customer.md`, `market-map.md`, `attribution-framework.md`, `activity-fit-map.md`, `swimlanes.md`, `forecast.md`
 
-Templates for all artifacts are in `skills/3hag-coach/references/tools.md`.
+Templates for all artifacts are in `references/tools.md`.
 
 ## Coaching Approach
 

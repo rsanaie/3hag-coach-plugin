@@ -1,4 +1,4 @@
-# 3HAG Coach Plugin for Claude Code
+# 3HAG Coach Skill for Claude Code
 
 A Claude Code skill that coaches users through Shannon Susko's **3HAG (3 Year Highly Achievable Goal)** strategic planning framework from "3HAG WAY: The Strategic Execution System."
 
@@ -29,22 +29,15 @@ The 3HAG methodology creates a "3 Year Highly Achievable Goal" — close enough 
 
 ## Installation
 
-### Via Plugin Marketplace (recommended)
-
 ```bash
-# Add the marketplace
-/plugin marketplace add rsanaie/3hag-coach-plugin
-
-# Install the plugin
-/plugin install 3hag
+git clone https://github.com/rsanaie/3hag-coach-plugin.git ~/.claude/skills/3hag-coach
 ```
 
-### Manual Installation
+Or symlink if you want to keep it elsewhere:
 
 ```bash
-# Clone and symlink
 git clone https://github.com/rsanaie/3hag-coach-plugin.git
-ln -s "$(pwd)/3hag-coach-plugin/skills/3hag-coach" ~/.claude/skills/3hag-coach
+ln -s "$(pwd)/3hag-coach-plugin" ~/.claude/skills/3hag-coach
 ```
 
 ## Usage

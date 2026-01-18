@@ -1,9 +1,0 @@
-{
-  "name": "3hag",
-  "version": "1.0.0",
-  "description": "Coach users through Shannon Susko's 3HAG (3 Year Highly Achievable Goal) strategic planning framework",
-  "author": {
-    "name": "rsanaie"
-  },
-  "repository": "https://github.com/rsanaie/3hag-coach-plugin"
-}
